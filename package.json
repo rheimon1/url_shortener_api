@@ -1,4 +1,9 @@
 {
+  "name": "url-shortener-api",
+  "version": "1.0.0",
+  "description": "NodeJs Rest API using Clean Architecture, Typescript and Design Patterns",
+  "author": "Wallace Ramon Nogueira Soares",
+  "repository": "github:rheimon1/rheimon1",
   "scripts": {
     "start": "node dist/main/server.js",
     "build": "rimraf dist && tsc -p tsconfig.json"
