@@ -10,7 +10,7 @@ export class DbRedirectOriginalUrl implements RedirectOriginalUrl {
     const url = await this.getUrlByUrlIdRepository.getByUrlId(id);
     let originalUrl = null;
     let success = false;
-    if (url) {
+    if (url && new Date() <= url.expiresAt) {
       originalUrl = url.originalUrl;
       success = true;
     }

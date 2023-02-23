@@ -7,6 +7,6 @@ export const makeDbShortenUrl = (): ShortenUrl => {
   const size = 11;
   const nanoidAdapter = new NanoidAdapter(size);
   const urlMongoRepository = new UrlMongoRepository();
-  return new DbShortenUrl(urlMongoRepository, nanoidAdapter, urlMongoRepository);
+  return new DbShortenUrl(urlMongoRepository, nanoidAdapter, urlMongoRepository, urlMongoRepository);
 }
   
