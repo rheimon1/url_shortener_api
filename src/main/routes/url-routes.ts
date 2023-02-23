@@ -4,6 +4,6 @@ import { adaptRoute } from "../adapters/express-route-adapter";
 import { makeShortenUrlController } from "../factories/controllers/shorten-url-controller-factory";
 
 export default (router: Router): void => {
-  router.post('/shorten-url', adaptRoute(makeShortenUrlController()));
+  router.post('/shortenUrl', adaptRoute(makeShortenUrlController()));
   router.get('/:urlId', adaptRoute(makeRedirectOriginalUrlController()));
 }
