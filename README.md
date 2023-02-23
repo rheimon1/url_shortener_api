@@ -104,3 +104,13 @@ API returns the following status codes:
 | 400 | `BAD REQUEST` |
 | 404 | `NOT FOUND` |
 | 500 | `INTERNAL SERVER ERROR` |
+
+
+5. Folder organization
+
+- Domain: Application domain, contains the use case contracts and models;
+- Data: Contains the implementation of the use cases and contracts for the dependencies of the use cases;
+- Infra: Infrastructure, contains the implementation of contracts defined in the Data layer and other external dependencies;
+- Main: Contains all files related to configuration, instantiation of all classes, definition of routes, middlewares, among others;
+- Presentation: Contains definition of API and endpoints, handling of HTTP requests and related contracts;
+- Validation: Contains the contracts and implementation of the validations used in the presentation layer, in the controllers.
